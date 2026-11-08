@@ -1,0 +1,721 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="14 页人形机器人/具身智能行业研究：市场规模、产业链、竞争格局、商业化、资本与社招需求。">
+<meta property="og:title" content="人形机器人 / 具身智能 行业研究">
+<meta property="og:description" content="出货在涨，需求还没跟上；上游确定性最高、模型层薪资最贵、整机岗位最多。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ruochenqiu-spec.github.io/humanoid-embodied-ai-research/">
+<meta property="og:image" content="https://ruochenqiu-spec.github.io/humanoid-embodied-ai-research/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>人形机器人/具身智能 行业研究 · 分享版</title>
+<style>
+@page{size:A4 landscape;margin:0}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact;box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff}
+body{font-family:"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei",-apple-system,"Helvetica Neue",Arial,sans-serif;color:#111;letter-spacing:.1px}
+.page{width:297mm;height:210mm;padding:10mm 13mm 9mm;box-sizing:border-box;background:#FAFAF8;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+.topbar{display:flex;justify-content:space-between;align-items:baseline;border-bottom:.35mm solid #111;padding-bottom:1.6mm;margin-bottom:4mm}
+.kicker{font-size:8pt;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#1F4E78}
+.topright{font-size:7.4pt;color:#6B7280}
+.foot{position:absolute;left:13mm;right:13mm;bottom:4mm;display:flex;justify-content:space-between;align-items:center;gap:4mm;font-size:6.8pt;color:#9CA3AF;border-top:.25mm solid #E5E5E5;padding-top:1.2mm}
+h1{font-size:33pt;line-height:1.14;margin:0 0 3mm;font-weight:800;letter-spacing:-.5px}
+h2{font-size:16pt;line-height:1.2;margin:0 0 2mm;font-weight:800;letter-spacing:-.2px}
+h3{font-size:8.8pt;margin:0 0 1.2mm;font-weight:800;color:#111}
+.lead{font-size:9.2pt;line-height:1.55;color:#374151;margin:0 0 3mm;max-width:270mm}
+.muted{color:#6B7280}.small{font-size:7.6pt;line-height:1.45;color:#6B7280}
+.tiny{font-size:6.6pt;color:#9CA3AF;line-height:1.4}
+.b{font-weight:800}.blue{color:#1F4E78}.red{color:#C0392B}.green{color:#1E8449}.gold{color:#B8860B}
+.rule{height:.35mm;background:#111;margin:3mm 0}
+.chips{display:flex;gap:3mm;margin:3mm 0}
+.chip{border:.3mm solid #111;border-radius:1mm;padding:2mm 3.4mm;background:#fff;flex:1;min-width:0}
+.chip .num{font-size:22pt;font-weight:800;line-height:1.05;color:#1F4E78}
+.chip .num small{font-size:9pt;font-weight:700}
+.chip .lbl{font-size:6.9pt;color:#6B7280;margin-top:.7mm;line-height:1.35}
+.cols{display:flex;gap:4.5mm}
+.col{flex:1;min-width:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.6mm 3mm}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.6mm 3mm}
+.card{background:#fff;border:.3mm solid #E5E5E5;border-radius:1.2mm;padding:2.4mm 2.8mm}
+.card.blue{border-left:1mm solid #1F4E78}
+.card.green{border-left:1mm solid #1E8449}
+.card.red{border-left:1mm solid #C0392B}
+.card.gray{background:#F3F4F6}
+.card p{font-size:7.4pt;line-height:1.42;color:#4B5563;margin:.6mm 0 0}
+.card .n{font-size:13pt;font-weight:800;color:#1F4E78;line-height:1;margin-bottom:1mm}
+.decision{background:#111;color:#FAFAF8;border-radius:1.4mm;padding:3.2mm 3.8mm}
+.decision h3{color:#fff;margin-bottom:1.6mm;font-size:9pt}
+.decision .n{color:#9EC5FF;font-weight:800}
+.decision p{font-size:7.6pt;line-height:1.45;margin:0 0 1.8mm}
+ul{margin:0;padding-left:4mm}
+li{font-size:7.8pt;line-height:1.5;margin-bottom:1.1mm}
+li::marker{color:#1F4E78}
+table{width:100%;border-collapse:collapse;font-size:7pt;table-layout:fixed}
+th{font-size:6.4pt;text-transform:uppercase;letter-spacing:.4px;color:#6B7280;text-align:left;padding:.9mm 1.2mm;border-bottom:.35mm solid #111;font-weight:700;vertical-align:bottom}
+td{padding:.8mm 1.2mm;border-bottom:.2mm solid #E8E8E8;vertical-align:top;line-height:1.3}
+td.nw{white-space:nowrap}
+.bar{display:flex;align-items:center;gap:2mm;margin-bottom:1.2mm}
+.bar .lbl{width:34mm;font-size:6.9pt;color:#374151;flex:0 0 34mm}
+.bar .trk{flex:1 1 auto;min-width:10mm;height:3.6mm;background:#E4E6E9;border-radius:.5mm;overflow:hidden}
+.bar .fil{height:100%;background:#1F4E78}
+.bar .fil.g{background:#1E8449}.bar .fil.r{background:#C0392B}.bar .fil.l{background:#9CA3AF}.bar .fil.y{background:#C9A227}
+.bar .v{width:11mm;flex:0 0 11mm;font-size:7.4pt;font-weight:800;text-align:right}
+.stack{display:flex;height:7mm;border-radius:1mm;overflow:hidden;margin:1.6mm 0 1.2mm}
+.stack div{display:flex;align-items:center;justify-content:center;color:#fff;font-size:7pt;font-weight:700}
+.hl{background:#FFF7E6;border-left:.9mm solid #D97706;padding:1.8mm 2.4mm;font-size:7.5pt;line-height:1.45}
+.so-what{font-size:7.8pt;line-height:1.45;border-left:1mm solid #1F4E78;padding:1.8mm 2.6mm;background:#EEF3FA}
+.so-what b{color:#1F4E78}
+.risk{border-left:.85mm solid #C0392B;padding-left:2mm;margin-top:1mm}
+.risk .t{font-size:6.8pt;font-weight:800;color:#C0392B;letter-spacing:.3px}
+.risk p{font-size:7.1pt;line-height:1.38;margin:.6mm 0 0}
+.tag{display:inline-block;font-size:6.2pt;padding:.3mm 1.4mm;border-radius:.8mm;background:#EEF3FA;color:#1F4E78;margin-right:1mm;font-weight:700}
+.tag.r{background:#FDECEA;color:#C0392B}.tag.g{background:#EAF7EF;color:#1E8449}.tag.y{background:#FFF7E6;color:#B8860B}
+.filltable td{padding:1.05mm 1.3mm;font-size:7.3pt;line-height:1.32}
+.filltable th{font-size:6.6pt;padding:1mm 1.3mm}
+.src{font-size:6.6pt;line-height:1.5;color:#374151}
+.src b{color:#1F4E78}
+.kpi{display:flex;gap:2.4mm;margin:2mm 0 2.6mm}
+.kpi .k{flex:1;background:#fff;border:.3mm solid #E5E5E5;border-radius:1.2mm;padding:2.2mm 2.6mm}
+.kpi .num{font-size:17pt;font-weight:800;color:#1F4E78;line-height:1}
+.kpi .lbl{font-size:6.6pt;color:#6B7280;margin-top:.8mm;line-height:1.35}
+.blockbox{background:#fff;border:.3mm solid #E5E5E5;border-radius:1.2mm;padding:2.6mm 3mm;margin-bottom:2.4mm}
+.blockbox .h{font-size:8.4pt;font-weight:800;margin-bottom:1.2mm}
+.blockbox .h span{color:#1F4E78}
+.tline{display:flex;margin-top:2mm;border-radius:1.2mm;overflow:hidden}
+.tline .t{flex:1;padding:2.2mm 2.6mm;color:#fff}
+.tline .t .q{font-size:10pt;font-weight:800;line-height:1}
+.tline .t .lv{font-size:6.6pt;opacity:.9;margin-top:.8mm}
+.tline .t .ds{font-size:6.6pt;opacity:.95;margin-top:1mm;line-height:1.35}
+.tline .t.a{background:#9CA3AF}.tline .t.b{background:#C9A227}.tline .t.c{background:#1E8449}.tline .t.d{background:#4B5563}
+.cover{display:flex;flex-direction:column;justify-content:space-between;height:calc(100% - 8mm);padding-bottom:2mm}
+.cover .mid{padding-top:6mm}
+.cover .sub{font-size:12pt;color:#374151;font-weight:600;margin:2mm 0 0}
+.cover .meta{display:flex;gap:10mm;margin-top:5mm}
+.cover .meta div{font-size:7pt;color:#6B7280;line-height:1.55}
+.cover .meta b{color:#111;display:block;font-size:7.4pt;margin-bottom:.5mm}
+</style></head><body>
+
+<!-- 01 COVER -->
+<div class="page"><div class="topbar"><div class="kicker">Industry Report · Humanoid &amp; Embodied AI</div><div class="topright">2026.11 · 分享版</div></div>
+<div class="cover">
+ <div class="mid">
+  <div class="kicker" style="margin-bottom:5mm">Industry Research / 2026</div>
+  <h1 style="font-size:38pt;max-width:260mm">人形机器人 / 具身智能<br>行业研究</h1>
+  <div class="rule" style="width:120mm"></div>
+  <div class="sub" style="max-width:240mm">出货在涨，需求还没跟上；价值正从整机滑向上游零件</div>
+  <div class="chips" style="margin-top:9mm">
+   <div class="chip"><div class="num">6.0<small> 万台</small></div><div class="lbl">2026 全球出货（高工/摩根大通口径）</div></div>
+   <div class="chip"><div class="num">34–150<small> 亿元</small></div><div class="lbl">2026 中国市场规模（机构口径差 4.4×）</div></div>
+   <div class="chip"><div class="num">75<small>%</small></div><div class="lbl">智元 + 宇树合计全球份额</div></div>
+   <div class="chip"><div class="num">15<small>%+</small></div><div class="lbl">未来三年预计出清率</div></div>
+  </div>
+ </div>
+ <div class="grid3" style="margin-top:6mm">
+ <div class="card blue"><h3>先看结论</h3><p>出货在涨、需求未起。2026 中国真实规模 <b>34–150 亿元</b>，宽度来自口径，不来自预测分歧。</p></div>
+ <div class="card blue"><h3>再看结构</h3><p>双寡头吃掉约七成；价值正从整机滑向<b>丝杠、灵巧手、六维力</b>等上游高壁垒件。</p></div>
+ <div class="card blue"><h3>最后看风险</h3><p>三年出清 <b>15%+</b>；Q4 融资转冷，定价锚已从“融资叙事”切到“交付与盈利”。</p></div>
+</div>
+<div class="small" style="margin-top:5mm;max-width:250mm"><b>阅读路径</b>　口径（P3）→ 规模（P4）→ 产业链（P5–6）→ 格局（P7）→ 技术（P8）→ 商业化（P9）→ 资本（P10）→ 风险（P11）→ 机会与人才（P12）→ 缺口（P13）</div>
+ <div class="meta">
+  <div><b>Prepared for</b>产业研究 / 投资与招聘决策</div>
+  <div><b>Date</b>2026.11.07</div>
+  <div><b>制作人</b>猎头 Tony Qiu</div>
+  <div><b>Method</b>19 条公开来源交叉核对；多口径并列，不取单点</div>
+  <div><b>Excluded</b>资料包外数据、厂商未证实口径、单一机构预测</div>
+  <div style="text-align:right"><b>行业研究</b>2026.11</div>
+ </div>
+</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>01 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 02 TL;DR -->
+<div class="page"><div class="topbar"><div class="kicker">01 · TL;DR</div><div class="topright">六个判断 + 三个结论</div></div>
+<h2>数量在涨，质量没跟上：这是一个“交付定价”开始的行业</h2>
+<div class="lead">同一个 2026 年，中国市场规模可以从 <b>34 亿元</b>说到 <b>150 亿元</b>，全球出货可以从 <b>2.5 万台</b>说到 <b>3.6 万台</b>。分歧不在增速，在口径。去掉口径噪声后，行业的真实状态是：<b>供给先起量，需求还停在科研、展示与数据采集</b>。</div>
+<div class="cols">
+ <div class="col" style="flex:1.35">
+  <div class="grid2">
+   <div class="card blue"><div class="n">01</div><h3>口径分歧大于增速分歧</h3><p>中国全年：中商 3.8 万台 [6]、高工 5 万台 [2]、工信部产量 10 万台 [9]；全球：高工 6 万 [2]、高盛 7.5 万 [4]。产量/出货/销量/装机混用。</p></div>
+   <div class="card blue"><div class="n">02</div><h3>需求质量弱于数量</h3><p>2026H1 科研/展示/政府占 69% [5]；宇树行业应用 9.01%，剔除企业导览后真实工业仅约 2.6% [9][34]；50%–70% 产量流向数据工厂 [13]。</p></div>
+   <div class="card blue"><div class="n">03</div><h3>价格陡峭下行</h3><p>均价 29,600 美元/台（-20.6%）[5]；2035 累计降约 56% [3]；宇树 R1 已到 2.99 万元 [13]。</p></div>
+   <div class="card blue"><div class="n">04</div><h3>资本 H1 过热、Q4 转冷</h3><p>H1 融资 900–1041 亿元 [8][7]；10 月仅 33 起/101 亿元，vs 6 月 55 起/309 亿元 [9]。</p></div>
+   <div class="card blue"><div class="n">05</div><h3>双寡头 + 长尾过热</h3><p>智元 8400–8600 台（35%–44%）[5][8]、宇树 5900 台（31%）[8]；企业数从 120 家增至 320 家 [10]。</p></div>
+   <div class="card blue"><div class="n">06</div><h3>价值向上游与软件迁移</h3><p>JPM 下调优必选至中性，维持绿的谐波、奥比中光增持 [3]；硬件仍占产业链 60%–70% [15]。</p></div>
+  </div>
+ </div>
+ <div class="col" style="flex:.82">
+  <div class="decision">
+   <h3>三个结论</h3>
+   <p><span class="n">01</span>　对外表述统一为“<b>34–150 亿元区间</b>”，不引用单点。</p>
+   <p><span class="n">02</span>　研究重心放在<b>整机</b>；上游高壁垒零件（丝杠、灵巧手、六维力）作为卡位监测。</p>
+   <p><span class="n">03</span>　筛选与人才判断采用“<b>现金流闭环速度</b>”，而不是“技术先进性”。</p>
+  </div>
+  <div class="card gray" style="margin-top:3mm"><h3>本报告回答的三个问题</h3><div class="small" style="line-height:1.55">1. 这个行业现在到底有多大、增速多快？<br>2. 钱和人才正在往哪个环节走？<br>3. 未来 12–24 个月谁会活下来？</div></div>
+  <div class="so-what" style="margin-top:3mm"><b>一句话</b>：这是一个“出货量先到、真实需求后到”的行业；短期看整机与量产，长期看谁先跑通“交付—复购—降本”。</div>
+ </div>
+</div>
+
+<div class="cols" style="margin-top:3mm">
+ <div class="col"><div class="blockbox"><div class="h">中国出货口径 <span>· 万台</span></div>
+  <div class="bar"><div class="lbl">中商 3.8 万</div><div class="trk"><div class="fil" style="width:38%"></div></div><div class="v">3.8</div></div>
+  <div class="bar"><div class="lbl">高工 5 万</div><div class="trk"><div class="fil" style="width:50%"></div></div><div class="v">5.0</div></div>
+  <div class="bar"><div class="lbl">工信部产量 10 万</div><div class="trk"><div class="fil r" style="width:100%"></div></div><div class="v">10</div></div>
+  <div class="small">同一国家、同一年，三个数字。产量含库存与样机。</div>
+ </div></div>
+ <div class="col"><div class="blockbox"><div class="h">月度融资 <span>· 亿元</span></div>
+  <div class="bar"><div class="lbl">6 月 308.92 亿</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">309</div></div>
+  <div class="bar"><div class="lbl">9 月 110.28 亿</div><div class="trk"><div class="fil y" style="width:36%"></div></div><div class="v">110</div></div>
+  <div class="bar"><div class="lbl">10 月 101.05 亿</div><div class="trk"><div class="fil r" style="width:33%"></div></div><div class="v">101</div></div>
+  <div class="small">H1 过热、Q4 转冷；交易数从 55 起降至 33 起 [9]。</div>
+ </div></div>
+ <div class="col"><div class="blockbox"><div class="h">宇树收入结构 <span>· 2025 年 1–9 月</span></div>
+  <div class="stack"><div style="width:73.6%;background:#1F4E78">73.6%</div><div style="width:17.39%;background:#C9A227">17.4%</div><div style="width:9.01%;background:#C0392B">9.0%</div></div>
+  <div class="small"><b>科研教育 73.6%</b> · 商业消费 17.39% · <b>行业应用 9.01%</b> [9]。这是可核实的唯一整机收入结构样本。</div>
+ </div></div>
+</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>02 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 03 口径 -->
+<div class="page"><div class="topbar"><div class="kicker">02 · 口径之争</div><div class="topright">同一行业，规模差 4.4 倍</div></div>
+<h2>先统一口径：34 亿还是 150 亿，取决于“谁在数、数什么”</h2>
+<div class="lead">十个公开数字放在一起，会发现它们衡量的不是同一件事：IDC 数“出货”、沙利文数“销量”、工信部数“产量”、高工数“整机出货”、TrendForce 直接给“市场规模”。<b>不做口径对照，任何单点数字都不能进决策。</b></div>
+<table>
+<tr><th style="width:15%">机构</th><th style="width:10%">时点</th><th style="width:10%">口径</th><th style="width:25%">数量</th><th style="width:18%">金额</th><th>隐含均价 / 备注</th></tr>
+<tr><td><b>IDC</b> [5]</td><td>2026H1 全球</td><td>出货</td><td>近 2.5 万台（+432.1%）</td><td>超 7.4 亿美元（+322.7%）</td><td>29,600 美元/台（-20.6%，机构直接给出）</td></tr>
+<tr><td><b>IDC</b> [5]</td><td>2026H1 中国</td><td>出货</td><td>超 1.9 万台（+426.3%），占全球 77.9%</td><td>—</td><td>中国厂商按国别占全球超 95%</td></tr>
+<tr><td><b>沙利文</b> [7]</td><td>2026H1 全球</td><td>销量</td><td>3.6 万台（超 2025 全年 3.5 万）</td><td>5.4 亿美元</td><td>约 1.5 万美元/台（依 [7] 测算）</td></tr>
+<tr><td><b>工信部</b> [9]</td><td>2026H1 中国</td><td>产量</td><td>超 4 万台；全年预计破 10 万台</td><td>—</td><td>产量含库存与样机，非销量</td></tr>
+<tr><td><b>高工</b> [2]</td><td>2026 全年 中国</td><td>整机出货</td><td>超 5 万台（低于年初 6 万预测）</td><td>超 100 亿元</td><td>约 20 万元/台（测算）</td></tr>
+<tr><td><b>高工</b> [2]</td><td>2026 全年 全球</td><td>出货</td><td>近 6 万台</td><td>近 20 亿美元</td><td>—</td></tr>
+<tr><td><b>摩根大通</b> [3]</td><td>2026 全球</td><td>出货</td><td>约 6 万台（中国 5 万台）</td><td>—</td><td>2030 全球 175 万台</td></tr>
+<tr><td><b>高盛</b> [4]</td><td>2026 全球</td><td>出货</td><td>基准 7.5 万台（自 5.1 万上调）</td><td>—</td><td>2035 650 万台 / 1380 亿美元</td></tr>
+<tr><td><b>TrendForce</b> [1]</td><td>2026 中国</td><td>市场规模</td><td>—</td><td>约 150 亿元</td><td>2027 至少 +60%</td></tr>
+<tr><td><b>中商</b> [6]</td><td>2026 中国</td><td>出货</td><td>3.8 万台（2025 为 1.44 万台）</td><td>34 亿元（2025 为 15.5 亿元）</td><td>约 8.9 万元/台（测算）</td></tr>
+</table>
+<div class="cols" style="margin-top:2.4mm">
+ <div class="col"><div class="card red"><h3>三处不可调和的矛盾</h3><p><b>台数</b>：2026H1 全球 IDC 2.5 万 [5] vs 沙利文 3.6 万 [7]，差 44%。<br><b>金额</b>：IDC 7.4 亿美元 [5] vs 沙利文 5.4 亿美元 [7]——台数多的金额反而小。<br><b>中国全年</b>：TrendForce 150 亿 [1] vs 高工 100 亿 [2] vs 中商 34 亿 [6]，差 4.4 倍。</p></div></div>
+ <div class="col"><div class="card"><h3>差异来自哪里</h3><p>按“金额 ÷ 台数”反推，三家隐含均价约 <b>30 万 / 20 万 / 8.9 万元</b>——差异主要来自<b>均价假设</b>，而不是出货量假设。IDC 与沙利文的差异则来自“收入”是否含解决方案、服务、税与渠道。<span class="tag y">分析师推断</span></p></div></div>
+ <div class="col" style="flex:.9"><div class="so-what"><b>口径结论</b><br>2026 年中国市场真实区间：<b>34 亿–150 亿元</b>。宽度来自口径，不来自预测分歧。统一口径前，任何单点数字都不宜作为决策基准。</div></div>
+</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">口径使用规则 <span>· 对外引用前先选口径，不要混用</span></div>
+<table>
+<tr><th style="width:14%">口径</th><th style="width:30%">定义</th><th style="width:26%">适合回答</th><th>风险</th></tr>
+<tr><td><b>产量</b></td><td>下线数量，含库存、样机与未交付</td><td>供给能力、产能爬坡</td><td>高估真实需求 1.6–2.6×</td></tr>
+<tr><td><b>出货</b></td><td>出厂交付给渠道/客户</td><td>渠道库存、交付节奏</td><td>含未激活、数据工厂采购</td></tr>
+<tr><td><b>销量</b></td><td>终端实际售出/确认收入</td><td>真实需求、复购</td><td>样本覆盖差异大（IDC vs 沙利文）</td></tr>
+<tr><td><b>市场规模</b></td><td>金额口径，= 台数 × 均价</td><td>对外叙事、TAM</td><td>均价假设直接决定结果（差 4.4×）</td></tr>
+</table></div>
+<div class="so-what" style="margin-top:2mm"><b>操作建议</b>：研究判断统一用“销量 + 行业应用收入占比 + 复购率”三件套；对外发言只用区间，并注明口径与来源编号。</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>03 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 04 TAM SAM SOM -->
+<div class="page"><div class="topbar"><div class="kicker">03 · 市场规模</div><div class="topright">TAM / SAM / SOM 三层测算</div></div>
+<h2>三层测算：TAM 800–1400 亿美元，SAM 34–150 亿元，SOM 看生产性场景</h2>
+<div class="lead">不做单点预测，只给区间与假设。TAM 用出货量交叉验证；SAM 按中国份额与场景收敛；SOM 只统计 2026–2027 可实现的有偿交付。</div>
+<div class="cols">
+ <div class="col"><div class="card blue" style="height:100%"><h3>TAM · 全球整机（2030–2035）</h3>
+  <div class="kpi" style="margin:1.6mm 0"><div class="k"><div class="num">75–175<small> 万台</small></div><div class="lbl">2030 出货</div></div><div class="k"><div class="num">800–1400<small> 亿美元</small></div><div class="lbl">2035 收入区间（推断）</div></div></div>
+  <div class="bar"><div class="lbl">IDC 低端 75 万</div><div class="trk"><div class="fil l" style="width:43%"></div></div><div class="v">75</div></div>
+  <div class="bar"><div class="lbl">高盛 89 万</div><div class="trk"><div class="fil" style="width:51%"></div></div><div class="v">89</div></div>
+  <div class="bar"><div class="lbl">摩根大通 175 万</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">175</div></div>
+  <div class="small" style="margin-top:1.2mm">2025 全球 1.3–2.2 万台；2026H1 1.91–3.6 万台。高盛：2035 650 万台 / 1380 亿美元 [4]；摩根大通：混合均价 2035 累计降 56% [3]；IDC 上调 2030 至超 75 万台 [5]。</div>
+ </div></div>
+ <div class="col"><div class="card green" style="height:100%"><h3>SAM · 中国 + 可付费场景</h3>
+  <div class="kpi" style="margin:1.6mm 0"><div class="k"><div class="num">38–90<small> 万台</small></div><div class="lbl">2030 中国出货</div></div><div class="k"><div class="num">34–150<small> 亿元</small></div><div class="lbl">2026 中国规模</div></div></div>
+  <div class="bar"><div class="lbl">中商 2030：38 万台</div><div class="trk"><div class="fil g" style="width:42%"></div></div><div class="v">38</div></div>
+  <div class="bar"><div class="lbl">摩根大通 2030：90 万</div><div class="trk"><div class="fil g" style="width:100%"></div></div><div class="v">90</div></div>
+  <div class="small" style="margin-top:1.2mm">中国份额口径：IDC 2026H1 77.9% [5]、中商 2030 约 88% [6]、JPM 2030 约 51% [3]。SAM 需再按“真实生产性场景占比”打折。</div>
+ </div></div>
+ <div class="col"><div class="card red" style="height:100%"><h3>SOM · 2026–2027 有偿交付</h3>
+  <div class="kpi" style="margin:1.6mm 0"><div class="k"><div class="num">34–150<small> 亿元</small></div><div class="lbl">中国整机销售额</div></div><div class="k"><div class="num">9–31<small>%</small></div><div class="lbl">行业应用收入占比</div></div></div>
+  <div class="bar"><div class="lbl">中商 34 亿</div><div class="trk"><div class="fil r" style="width:23%"></div></div><div class="v">34</div></div>
+  <div class="bar"><div class="lbl">高工 100 亿</div><div class="trk"><div class="fil r" style="width:67%"></div></div><div class="v">100</div></div>
+  <div class="bar"><div class="lbl">TrendForce 150 亿</div><div class="trk"><div class="fil r" style="width:100%"></div></div><div class="v">150</div></div>
+  <div class="small" style="margin-top:1.2mm">宇树行业应用仅 9.01% [9]；科研/展示/政府 69% [5]。按工信部 10 万台 × 30 万元推算的 300 亿元仅为口径极值，不代表预测。</div>
+ </div></div>
+</div>
+<div class="cols" style="margin-top:2.4mm">
+ <div class="col" style="flex:1.2"><div class="blockbox"><div class="h">关键假设与敏感性 <span>· 五个变量决定规模</span></div>
+  <table>
+   <tr><th style="width:26%">假设</th><th>取值与来源</th><th style="width:34%">敏感性方向</th></tr>
+   <tr><td>A1 出货口径</td><td>3.8 万 [6] – 5 万 [2] – 10 万 [9]</td><td>产量口径含库存与样机，可高估 1.6–2.6×</td></tr>
+   <tr><td>A2 均价</td><td>8.9 万 [6] / 20 万 [2] / 30 万元 [1] / 2.96 万美元 [5]</td><td>均价每降 10%，规模降 10%</td></tr>
+   <tr><td>A3 降本曲线</td><td>2026H1 -20.6% [5]；2035 累计 -56% [3]</td><td>降本快于放量则规模收缩</td></tr>
+   <tr><td>A4 场景结构</td><td>科研/展示/政府 69% [5]；行业应用 9.01% [9]</td><td>生产性占比每 +10pct，收入质量改善、单价承压</td></tr>
+   <tr><td>A5 中国份额</td><td>77.9% [5] / 约 88% [6] / 约 51% [3]</td><td>直接决定 SAM 分母</td></tr>
+  </table>
+ </div></div>
+ <div class="col" style="flex:.8"><div class="so-what" style="height:100%"><b>结论</b><br>2026 年中国市场规模应表述为 <b>34 亿–150 亿元</b>；TAM 的 2035 收入区间为 <b>800 亿–1400 亿美元</b>（由高盛出货锚 + 摩根大通降本路径组合推得，非任一机构原始数字）。<br><br><b>用法</b>：对外引用必须带口径；对内决策看区间中值与敏感性，不看单点。</div></div>
+</div>
+
+<div class="cols" style="margin-top:2.4mm">
+ <div class="col" style="flex:1.2"><div class="blockbox"><div class="h">三种情景 <span>· 2030 全球出货</span></div>
+  <table>
+   <tr><th style="width:14%">情景</th><th style="width:22%">2030 出货</th><th style="width:26%">2035 收入</th><th>关键前提</th></tr>
+   <tr><td><b>悲观</b></td><td>75 万台（IDC）[5]</td><td>—</td><td>生产性需求不放量，科研/数据工厂预算收缩</td></tr>
+   <tr><td><b>中性</b></td><td>89 万台（高盛）[4]</td><td>1380 亿美元（650 万台）[4]</td><td>工业场景逐步验证，降本按计划推进</td></tr>
+   <tr><td><b>乐观</b></td><td>175 万台（JPM）[3]</td><td>—</td><td>数据飞轮成立、均价降 56% 后需求爆发</td></tr>
+  </table></div></div>
+ <div class="col" style="flex:.8"><div class="blockbox"><div class="h">TAM 推导 <span>· 不是任何一家机构的原始数字</span></div>
+  <div class="small" style="font-size:8pt;line-height:1.7"><b>收入 = 出货量 × 均价</b><br>出货：75–175 万台（2030）<br>均价：2035 较 2026 累计降约 56% [3]<br>上限锚：高盛 2035 1380 亿美元 [4]<br><br><b>结论</b>：800 亿–1400 亿美元为组合推导区间，使用时须标注“分析师推断”。</div>
+ </div></div>
+</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>04 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 05 产业链 -->
+<div class="page"><div class="topbar"><div class="kicker">04 · 产业链</div><div class="topright">价值集中在执行器与灵巧手</div></div>
+<h2>产业链：整机只是入口，钱在关节、灵巧手与零件</h2>
+<div class="lead">硬件成本占产业链约 <b>60%–70%</b> [15]。两套研报口径（零件口径 / 模块口径）不可相加，但都指向同一结论：<b>执行器 + 灵巧手合计约 50%–83%</b>。</div>
+<div class="cols">
+ <div class="col" style="flex:1.05">
+  <div class="blockbox"><div class="h">上中下游 <span>· 谁定义成本与性能</span></div>
+   <div style="display:flex;gap:2mm;align-items:stretch">
+    <div class="card" style="flex:1"><h3>上游 · 核心零部件</h3><p>谐波/RV 减速器、无框力矩电机、空心杯电机、行星滚柱丝杠、编码器、六维力/触觉传感器、轴承；芯片/计算平台、软件算法 [14][15]</p></div>
+    <div class="card" style="flex:1"><h3>中游 · 整机</h3><p>本体结构、自由度设计、运动控制、具身智能算法、模块化关节、测试/标定/量产交付 [15]</p></div>
+    <div class="card" style="flex:1"><h3>下游 · 场景</h3><p>工业（3C/半导体/CNC）、物流、特种、家庭；场景反过来定义零件要求 [15]</p></div>
+   </div>
+  </div>
+  <div class="blockbox"><div class="h">单机 BOM · 模块口径 <span>· 国信 / 特斯拉 Optimus Gen2</span></div>
+   <div class="bar"><div class="lbl">线性关节</div><div class="trk"><div class="fil" style="width:84%"></div></div><div class="v">27.6%</div></div>
+   <div class="bar"><div class="lbl">旋转关节</div><div class="trk"><div class="fil" style="width:70%"></div></div><div class="v">22.9%</div></div>
+   <div class="bar"><div class="lbl">灵巧手</div><div class="trk"><div class="fil y" style="width:100%"></div></div><div class="v">32.9%</div></div>
+   <div class="small">国信口径：百万台量产后占比基本不变 [15][16]；模块口径下线性+旋转执行器合计约 51% [16]。</div>
+  </div>
+ </div>
+ <div class="col" style="flex:.95">
+  <div class="blockbox"><div class="h">零件口径 <span>· 特斯拉 Optimus Gen2 成本结构</span></div>
+   <div class="bar"><div class="lbl">丝杠</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">19%</div></div>
+   <div class="bar"><div class="lbl">无框力矩电机</div><div class="trk"><div class="fil" style="width:84%"></div></div><div class="v">16%</div></div>
+   <div class="bar"><div class="lbl">减速器</div><div class="trk"><div class="fil" style="width:68%"></div></div><div class="v">13%</div></div>
+   <div class="bar"><div class="lbl">力传感器</div><div class="trk"><div class="fil" style="width:58%"></div></div><div class="v">11%</div></div>
+   <div class="bar"><div class="lbl">空心杯电机</div><div class="trk"><div class="fil" style="width:42%"></div></div><div class="v">8%</div></div>
+   <div class="bar"><div class="lbl">轴承</div><div class="trk"><div class="fil" style="width:29%"></div></div><div class="v">5.5%</div></div>
+   <div class="small">零件口径合计 72.5%，其余未列 [14]。另有模块口径：FSD/AI 芯片约 26.5%、线性 28%、旋转 23%、骨骼 13%、灵巧手 7% [16]。</div>
+  </div>
+  <div class="so-what"><b>So what</b>：不要问“整机谁赢”，先问“谁卡在价值量最高、国产化最低的那几个件上”。丝杠、灵巧手、六维力是当前最值得跟踪的三个词。</div>
+ </div>
+</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">价值量迁移 <span>· 不同阶段，钱在 different 的地方</span></div>
+<table>
+<tr><th style="width:18%">阶段</th><th style="width:22%">价值集中环节</th><th style="width:28%">驱动因素</th><th>对研究的含义</th></tr>
+<tr><td><b>2026–2027</b></td><td>整机 + 执行器</td><td>量产爬坡、BOM 降本</td><td>看交付量、单台 BOM、良率</td></tr>
+<tr><td><b>2027–2029</b></td><td>灵巧手 + 丝杠</td><td>精细操作需求、国产替代</td><td>看单只成本能否到 1.5 万元、丝杠良率</td></tr>
+<tr><td><b>2029+</b></td><td>数据 + 软件</td><td>一脑多体、复购与数据闭环</td><td>看行业应用收入占比、复购率</td></tr>
+</table></div>
+<div class="so-what" style="margin-top:2mm"><b>判断</b>：整机是入口，但“无论谁赢都要买”的零件更确定；当价值链转向数据与软件时，整机厂的议价权会被“一脑多体”重构 [3][17][18]。</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>05 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 06 零部件 -->
+<div class="page"><div class="topbar"><div class="kicker">05 · 卡脖子地图</div><div class="topright">丝杠最难，谐波最快</div></div>
+<h2>零件国产化：谐波已进量产，丝杠还在最早期</h2>
+<div class="lead">判断一个环节，不只看“有没有产品”，要看四层证据：<b>可用于机器人 &lt; 机器人专用产品 &lt; 订单/小批量 &lt; 规模收入与稳定交付</b>。按这个标准，各环节成熟度差异很大。</div>
+<table>
+<tr><th style="width:14%">环节</th><th style="width:12%">价值量</th><th style="width:20%">海外格局</th><th style="width:26%">国产玩家</th><th>成熟度判断 <span class="tag y">推断</span></th></tr>
+<tr><td><b>谐波减速器</b></td><td>约 14% [16]</td><td>哈默纳科全球 82% [14]</td><td>绿的谐波（并布局丝杠）、双环传动、中大力德、国茂股份、斯菱、丰立 [14][15]</td><td><span class="tag g">国产化最高</span> 已进入量产验证，重点看寿命、回差、批量一致性</td></tr>
+<tr><td><b>RV 减速器</b></td><td>—</td><td>纳博特斯克 61% [14]</td><td>双环传动、中大力德等 [14]</td><td><span class="tag g">成熟</span> 重负载部位，人形用量相对少</td></tr>
+<tr><td><b>行星滚柱丝杠</b></td><td>18.7%（滚柱）+15.1%（微型）[16]</td><td>全球仅舍弗勒、新剑传动供 Optimus；2022 年日欧占中国市场 90% [14]</td><td>恒立液压、震裕科技、绿的谐波 [14]</td><td><span class="tag r">壁垒最高</span> 材料、热处理、磨削、寿命、批量一致性均待突破</td></tr>
+<tr><td><b>无框力矩 / 空心杯电机</b></td><td>9.3% / 9.4% [16]</td><td>—</td><td>汇川、雷赛、伟创、步科、兆威机电、鸣志电器 [15][16]</td><td><span class="tag y">中早期</span> 可复用工业与汽车基础，看扭矩密度、温升、噪音</td></tr>
+<tr><td><b>灵巧手</b></td><td>32.9% [16]</td><td>—</td><td>兆威机电、因时机器人、大寰机器人 [14]</td><td><span class="tag r">早期</span> 2029 年全球 100 万台整机需 200 万只，单只成本有望降至 1.5 万元、对应约 300 亿元 [14]</td></tr>
+<tr><td><b>六维力 / 触觉传感器</b></td><td>力传感器 11% [14]</td><td>—</td><td>柯力传感、奥比中光、芯动联科 [16]</td><td><span class="tag r">早期</span> 国产替代空间大，看解耦、温漂、过载、批量标定</td></tr>
+</table>
+<div class="cols" style="margin-top:2.4mm">
+ <div class="col"><div class="card blue"><h3>先于整机的规模信号</h3><p>长盈精密 2026H1 人形机器人零组件交付约 <b>86 万件</b>，超上年全年 [7]——上游零部件已先于整机进入规模交付。<span class="tag y">分析师推断</span></p></div></div>
+ <div class="col"><div class="card"><h3>两个“双供”事实</h3><p>丝杠：全球仅舍弗勒、新剑传动两家供 Optimus [14]；减速器：哈默纳科 82%、纳博特斯克 61% [14]。<b>高壁垒件仍是卖方市场</b>，国产替代的时间差就是利润窗口。</p></div></div>
+ <div class="col"><div class="so-what"><b>跟踪清单</b><br>① 丝杠：谁进入特斯拉/头部整机供应链；② 灵巧手：寿命与单只成本能否到 1.5 万元；③ 六维力：批量标定与温漂；④ 谐波：从“有订单”到“规模收入”。</div></div>
+</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">国产替代四阶段 <span>· 用证据分级，不用“有产品”判断</span></div>
+<div class="chips" style="margin:1.6mm 0 2.2mm">
+ <div class="chip"><div class="num" style="font-size:13pt">01</div><div class="lbl">可用于机器人</div></div>
+ <div class="chip"><div class="num" style="font-size:13pt">02</div><div class="lbl">机器人专用产品</div></div>
+ <div class="chip"><div class="num" style="font-size:13pt">03</div><div class="lbl">订单 / 小批量</div></div>
+ <div class="chip"><div class="num" style="font-size:13pt">04</div><div class="lbl">规模收入与稳定交付</div></div>
+</div>
+<table>
+<tr><th style="width:16%">环节</th><th style="width:22%">当前阶段</th><th style="width:34%">验证指标</th><th>时间窗</th></tr>
+<tr><td>谐波减速器</td><td><span class="tag g">03 → 04</span></td><td>寿命、回差、批量一致性、规模交付</td><td>2026–2027</td></tr>
+<tr><td>行星滚柱丝杠</td><td><span class="tag r">02 → 03</span></td><td>材料、热处理、磨削、效率、寿命</td><td>2027–2029</td></tr>
+<tr><td>灵巧手</td><td><span class="tag r">02</span></td><td>连续寿命、抓取成功率、触觉稳定性、维修成本</td><td>2027–2029</td></tr>
+<tr><td>六维力传感器</td><td><span class="tag r">02</span></td><td>解耦、温漂、过载、批量标定</td><td>2027–2029</td></tr>
+</table></div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>06 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 07 竞争格局 -->
+<div class="page"><div class="topbar"><div class="kicker">06 · 竞争格局</div><div class="topright">双寡头 + 320 家长尾</div></div>
+<h2>前两名吃掉七成：双寡头已经成型，长尾还在过热</h2>
+<div class="lead">2026H1 全球出货约 2.5 万台（IDC）[5] / 3.6 万台（沙利文）[7]。无论用哪个分母，<b>智元 + 宇树都拿走约七成</b>，其余厂商出货量普遍不足千台——差距在持续拉大。</div>
+<div class="cols">
+ <div class="col" style="flex:1">
+  <div class="blockbox"><div class="h">双寡头 <span>· SAG 口径，2026H1</span></div>
+   <div class="bar"><div class="lbl">智元</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">44%</div></div>
+   <div class="bar"><div class="lbl">宇树</div><div class="trk"><div class="fil" style="width:70%"></div></div><div class="v">31%</div></div>
+   <div class="bar"><div class="lbl">其他所有厂商</div><div class="trk"><div class="fil l" style="width:57%"></div></div><div class="v">25%</div></div>
+   <div class="small">智元 8400 台 / 44%、宇树 5900 台 / 31% [8]；另一口径：智元超 8600 台、全球第一、约占 35% [5]。<b>44% 与 35% 的差异源于分母不同</b>（SAG 约 1.9 万台 vs IDC 约 2.5 万台）[推断]。</div>
+  </div>
+  <div class="blockbox"><div class="h">梯队 <span>· 智源研究院口径</span></div>
+   <table>
+    <tr><th style="width:18%">梯队</th><th style="width:30%">公司</th><th>判断依据</th></tr>
+    <tr><td><b>第一梯队</b></td><td>宇树、智元、银河通用</td><td>概念验证订单近 10 亿元，筹备上市 [10]</td></tr>
+    <tr><td><b>第二梯队</b></td><td>星海图、逐际动力</td><td>累计订单数亿元 [10]</td></tr>
+    <tr><td><b>第三梯队</b></td><td>小鹏等</td><td>跨界入局或路径摇摆，订单规模有限 [10]</td></tr>
+   </table>
+  </div>
+ </div>
+ <div class="col" style="flex:1">
+  <div class="blockbox"><div class="h">四类路线 <span>· 同一条赛道，四种生意</span></div>
+   <div class="grid2">
+    <div class="card blue"><h3>全栈量产派</h3><p>小鹏 IRON、宇树、特斯拉 Optimus。自研硬件 + 规模制造 + 数据飞轮，赌通用形态统一。</p></div>
+    <div class="card green"><h3>商业交互/陪伴派</h3><p>逐际 Luna、优必选仿生、诺因。卖“硬件 + 内容运营”，现金流快，复购待验证。</p></div>
+    <div class="card"><h3>工具数据派</h3><p>宇树 R1、逐际 TRON 2、恺望数据。低价走量进入高校/科研/数据工厂，护城河在生态。</p></div>
+    <div class="card red"><h3>工业场景派</h3><p>优必选 Walker、中科新松、星动纪元。高单价、招标制，先在一个窄场景做透。</p></div>
+   </div>
+  </div>
+  <div class="so-what"><b>判断</b>：工具数据派的兴起，与“50%–70% 产量流向数据工厂”[13] 互为表里——“卖工具给采数据的人”是当前最容易形成现金流的模式，但它<b>不验证终局需求</b>。真正的问题是：谁能先把 3C/半导体/CNC 的复购跑出来。</div>
+ </div>
+</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">整机 vs 上游 <span>· 谁更赚钱、谁更确定</span></div>
+<table>
+<tr><th style="width:18%">维度</th><th style="width:41%">整机厂</th><th>上游高壁垒零件</th></tr>
+<tr><td><b>毛利率</b></td><td>低：价格战 + 以价换量 [3][5]</td><td>高：寡头格局（哈默纳科 82%、纳博 61%）[14]</td></tr>
+<tr><td><b>竞争</b></td><td>320 余家企业 [10]</td><td>每环节 3–5 家，丝杠全球仅两家供 Optimus [14]</td></tr>
+<tr><td><b>确定性</b></td><td>低：路线、订单、估值三重波动</td><td>高：无论谁赢都要买</td></tr>
+<tr><td><b>估值</b></td><td>高波动：宇树 11 天腰斩 [13]</td><td>相对稳定：JPM 维持增持 [3]</td></tr>
+<tr><td><b>客户</b></td><td>车厂、工厂、科研</td><td>所有整机厂 + 跨行业（汽车/工业）</td></tr>
+</table></div>
+<div class="so-what" style="margin-top:2mm"><b>结论</b>：整机看“谁能跑出复购”，上游看“谁卡进头部供应链”。前者赔率高，后者胜率高。</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>07 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 08 技术路线 -->
+<div class="page"><div class="topbar"><div class="kicker">07 · 技术路线</div><div class="topright">VLA 三条线 + 世界模型融合</div></div>
+<h2>路线未收敛：VLA 三条线并行，世界模型开始融合</h2>
+<div class="lead">信通院明确“技术路线未收敛”，端到端与分层架构之争仍在 [17]。产业共识是 VLA 与世界模型<b>并非二选一</b>，趋势为“大脑（通用大模型）+ 小脑（运控）”的分层融合 [19]。</div>
+<div class="cols">
+ <div class="col"><div class="card blue" style="height:100%"><h3>路线 01 · VLM + 动作模型</h3><p>视觉语言模型解析指令与画面，动作模型生成控制。代表：Physical Intelligence π0 系列、清华 RDT、Figure。[18][19]</p><div class="small" style="margin-top:1.2mm"><b>特点</b>：语义理解强，适合精细操作；对动作数据依赖高。</div></div></div>
+ <div class="col"><div class="card blue" style="height:100%"><h3>路线 02 · VGM 视频生成 + 动作</h3><p>先用视频生成预测执行轨迹，再反推控制。代表：字节 GR-2、清华 ATM。[18][19]</p><div class="small" style="margin-top:1.2mm"><b>特点</b>：可利用海量人类视频；长时序预判更好，实时性承压。</div></div></div>
+ <div class="col"><div class="card blue" style="height:100%"><h3>路线 03 · VLM + Latent + Action</h3><p>用隐式动作标记（Latent Action Tokens）弥合图文与动作。代表：智元 ViLLA（VLM + MoE：隐式规划器 + 动作专家）。[18][19]</p><div class="small" style="margin-top:1.2mm"><b>特点</b>：可利用异构数据，泛化与长任务表现突出。</div></div></div>
+</div>
+<div class="cols" style="margin-top:2.4mm">
+ <div class="col" style="flex:1.05"><div class="blockbox"><div class="h">世界模型 <span>· 2026 新增变量</span></div>
+  <div class="grid2">
+   <div class="card"><p><b>NVIDIA</b>：DreamZero（10–20 分钟演示数据即可提升）、Cosmos + GR00T [18]</p></div>
+   <div class="card"><p><b>蚂蚁</b>：LingBot-VA；π0.7 用轻量世界模型生成视觉子目标 [18]</p></div>
+   <div class="card"><p><b>TD-MPC2</b>：隐空间规划；世界模型提供预测接口 [18]</p></div>
+   <div class="card"><p><b>判断</b>：世界模型补物理认知与长时序规划，与 VLA 形成混合架构 [18][19]</p></div>
+  </div>
+ </div></div>
+ <div class="col" style="flex:.95"><div class="blockbox"><div class="h">中外代表 <span>· 已落地/在落地</span></div>
+  <table>
+   <tr><th style="width:22%">主体</th><th>进展</th></tr>
+   <tr><td><b>Figure AI</b></td><td>Figure 03 + Helix 02 于 2026-06 进 BMW 工厂做物流与分拣 [17][18]</td></tr>
+   <tr><td><b>Google</b></td><td>RT-2 → Gemini Robotics 1.5，分层：Robotics-ER 1.5 推理 + Robotics 1.5 动作 [18]</td></tr>
+   <tr><td><b>蚂蚁 Robbyant</b></td><td>LingBot-VLA 2.0 在智慧药房落地，一个“大脑”驱动乐聚、银河通用、自研三种本体 [17][18]</td></tr>
+   <tr><td><b>银河通用</b></td><td>“银河星脑”打通大模型 + 本体 + 场景运营，便利店/药房百台级 [12][10]</td></tr>
+   <tr><td><b>智元</b></td><td>ViLLA；2026H1 收入接近 20 亿元，研发 70% 投智能 [9][18]</td></tr>
+  </table>
+ </div></div>
+</div>
+<div class="hl" style="margin-top:2mm"><b>关键人物判断（厂商/创始人口径，非中立结论）</b>：智元彭志辉称物理 AI 有五次跃迁，当前处于第二→第三阶段，“类 ChatGPT 节点可能很快到来”；宇树王兴兴称 GPT-6 后“物理 AI 已看到被击穿的苗头，可能 1–3 年”[9]。</div>
+
+<div class="cols" style="margin-top:2.4mm">
+ <div class="col" style="flex:1.15"><div class="blockbox"><div class="h">路线对比 <span>· 没有一条全面占优</span></div>
+  <table>
+   <tr><th style="width:22%">路线</th><th style="width:16%">数据需求</th><th style="width:14%">算力</th><th style="width:16%">落地速度</th><th>主要风险</th></tr>
+   <tr><td>VLM + 动作</td><td>中</td><td>中</td><td>快</td><td>动作数据不足</td></tr>
+   <tr><td>VGM + 动作</td><td>高（视频）</td><td>高</td><td>中</td><td>实时性</td></tr>
+   <tr><td>VLM + Latent</td><td>高（异构）</td><td>高</td><td>中</td><td>架构复杂</td></tr>
+   <tr><td>世界模型融合</td><td>高</td><td>高</td><td>慢</td><td>物理一致性</td></tr>
+  </table></div></div>
+ <div class="col" style="flex:.85"><div class="blockbox"><div class="h">时间线 <span>· 从单点到融合</span></div>
+  <div class="tline">
+   <div class="t a"><div class="q">2024</div><div class="lv">单点突破</div><div class="ds">π0 / RDT / Diffusion Policy</div></div>
+   <div class="t b"><div class="q">2025</div><div class="lv">分层与开源</div><div class="ds">GR00T / RT-2 / Gemini Robotics</div></div>
+   <div class="t c"><div class="q">2026</div><div class="lv">融合与落地</div><div class="ds">世界模型 + VLA；一脑多体</div></div>
+  </div>
+  <div class="small" style="margin-top:1.6mm">信通院：路线未收敛 [17]；VLA 与世界模型非二选一，融合分层是共识 [19]。</div>
+ </div></div>
+</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>08 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 09 商业化 -->
+<div class="page"><div class="topbar"><div class="kicker">08 · 商业化</div><div class="topright">行业应用 9% · 真实工业 2.6%</div></div>
+<h2>大部分出货没在“干活”：行业应用 9%，真实工业仅 2.6%</h2>
+<div class="lead">行业当前最大的错觉，是把“出货”当成“需求”。宇树的收入结构给出最直接的证据：<b>科研教育 73.6%、商业消费 17.39%、行业应用 9.01%</b> [9]。</div>
+<div class="cols">
+ <div class="col" style="flex:1.1">
+  <div class="blockbox"><div class="h">宇树 2025 年 1–9 月人形收入结构 <span>· 行业应用仅 9%</span></div>
+   <div class="stack"><div style="width:73.6%;background:#1F4E78">科研教育 73.6%</div><div style="width:17.39%;background:#C9A227">商业消费 17.4%</div><div style="width:9.01%;background:#C0392B">行业 9.0%</div></div>
+   <div class="small">来源 [9]。行业应用 9.01% 中企业导览占 50–70%；明确用于智能制造/巡检/物流的仅 1,570 万元，约为人形收入的 <b>2.6%</b> [34]。</div>
+  </div>
+  <div class="blockbox"><div class="h">场景结构 <span>· 在改善，但幅度有限</span></div>
+   <div class="bar"><div class="lbl">科研/展示/政府 2025</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">83.8%</div></div>
+   <div class="bar"><div class="lbl">科研/展示/政府 2026H1</div><div class="trk"><div class="fil" style="width:82%"></div></div><div class="v">69.0%</div></div>
+   <div class="bar"><div class="lbl">产量流向“数据工厂”</div><div class="trk"><div class="fil r" style="width:83%"></div></div><div class="v">50–70%</div></div>
+   <div class="small">IDC [5]；数据工厂为产业分析人士估计 [13]，非官方统计。</div>
+  </div>
+ </div>
+ <div class="col" style="flex:.9">
+  <div class="blockbox"><div class="h">真实生产性场景 <span>· 目前只有少数确定性工位</span></div>
+   <div class="grid2">
+    <div class="card green"><h3>3C 质检</h3><p>节拍、良率、连续作业可量化</p></div>
+    <div class="card green"><h3>半导体封测上下料</h3><p>洁净室、重复搬运，ROI 清晰</p></div>
+    <div class="card green"><h3>CNC 上下料</h3><p>确定性任务，易做节拍与安全冗余</p></div>
+    <div class="card gray"><h3>景点/酒店导览</h3><p>付费来自流量与体验增值，<b>非严格 ROI</b> [9]</p></div>
+   </div>
+  </div>
+  <div class="blockbox"><div class="h">价格带 <span>· 已从“奢侈品”打到“工具价”</span></div>
+   <div class="bar"><div class="lbl">宇树 R1 起售</div><div class="trk"><div class="fil g" style="width:3%"></div></div><div class="v">2.99 万</div></div>
+   <div class="bar"><div class="lbl">逐际 Luna</div><div class="trk"><div class="fil" style="width:30%"></div></div><div class="v">29.8 万</div></div>
+   <div class="bar"><div class="lbl">优必选仿生</div><div class="trk"><div class="fil r" style="width:100%"></div></div><div class="v">11–99 万</div></div>
+   <div class="small">来源 [13]。均价 2026H1 为 29,600 美元/台（-20.6%）[5]。</div>
+  </div>
+  <div class="so-what"><b>So what</b>：判断一家整机厂，不看发布会订单，看三个数——<b>行业应用收入占比、复购率、单台实际工作时长</b>。这三个数目前都缺失。</div>
+ </div>
+</div>
+<div class="hl" style="margin-top:2mm"><b>出海</b>：高工预计 2026 年中国整机出海出货翻倍 [2]；门槛是产品认证、安全合规、数据合规、本地化服务。国内强在硬件供应链，海外强在大模型能力与高价值场景 [2]。</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">场景成熟度矩阵 <span>· 用 ROI 与复购判断，不用发布会判断</span></div>
+<table>
+<tr><th style="width:18%">场景</th><th style="width:16%">ROI 可量化</th><th style="width:18%">复购证据</th><th style="width:14%">规模化</th><th>判断</th></tr>
+<tr><td><b>3C 质检</b></td><td>高</td><td>未见公开</td><td>中</td><td><span class="tag g">优先</span> 节拍、良率、连续作业可量化</td></tr>
+<tr><td><b>半导体封测</b></td><td>高</td><td>未见公开</td><td>中</td><td><span class="tag g">优先</span> 洁净室重复搬运，ROI 清晰</td></tr>
+<tr><td><b>CNC 上下料</b></td><td>高</td><td>未见公开</td><td>中</td><td><span class="tag g">优先</span> 确定性任务，易做安全冗余</td></tr>
+<tr><td><b>景点/酒店</b></td><td>低</td><td>流量驱动</td><td>低</td><td><span class="tag y">谨慎</span> 付费来自体验增值，非严格 ROI [9]</td></tr>
+<tr><td><b>家庭</b></td><td>低</td><td>无</td><td>低</td><td><span class="tag r">早期</span> 安全、柔顺、噪音与成本未解</td></tr>
+</table></div>
+<div class="hl" style="margin-top:2mm"><b>订单口径警示</b>：优必选“H1 新增订单超 10 亿元”、U1 预订 13,361 台、柳州万台级工厂 [7][13] 均为<b>厂商口径</b>；商务部 +22.6% 为渠道零售口径 [9]，与整机出货不可混用。</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>09 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 10 资本 -->
+<div class="page"><div class="topbar"><div class="kicker">09 · 资本与 IPO</div><div class="topright">H1 过热，Q4 转冷</div></div>
+<h2>上半年 900–1041 亿，四季度转冷：定价锚已从叙事切到交付</h2>
+<div class="lead">一级市场仍在为“团队与叙事”定价，二级市场已开始为“交付与毛利”定价。两者之间的估值差，是未来 12 个月最大的风险敞口。</div>
+<div class="cols">
+ <div class="col" style="flex:1.05">
+  <div class="blockbox"><div class="h">融资节奏 <span>· 2026H1 约 900–1041 亿元</span></div>
+   <div class="bar"><div class="lbl">6 月</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">55 起 / 309 亿</div></div>
+   <div class="bar"><div class="lbl">9 月</div><div class="trk"><div class="fil y" style="width:36%"></div></div><div class="v">60 起 / 110 亿</div></div>
+   <div class="bar"><div class="lbl">10 月</div><div class="trk"><div class="fil r" style="width:33%"></div></div><div class="v">33 起 / 101 亿</div></div>
+   <div class="small">IT 桔子/源达：[8][7]；月度数据 [9]。具身集：119 家整机厂、311 起融资；2026 年 10 亿+ 融资 24 起（2025 仅 3 起）[11]。</div>
+  </div>
+  <div class="blockbox"><div class="h">IPO 与估值 <span>· 400 亿俱乐部已成型</span></div>
+   <table>
+    <tr><th style="width:20%">公司</th><th style="width:24%">资本动作</th><th>关键数字</th></tr>
+    <tr><td><b>宇树</b></td><td>2026-08-19 科创板</td><td>发行价 150.8 元，发行市值 609 亿元；2025 营收 16.99 亿；2026 前三季营收 18.17 亿、净利 3.87 亿（+270%）[8][9][13]</td></tr>
+    <tr><td><b>智元</b></td><td>港股 IPO 启动</td><td>估值 400–500 亿港元；2026H1 收入近 20 亿元；2025 营收超 10 亿 [8][9][13]</td></tr>
+    <tr><td><b>优必选</b></td><td>港股已上市</td><td>市值约 450 亿港元 [13]</td></tr>
+    <tr><td><b>小鹏 IRON</b></td><td>2026-08-24 单轮</td><td>超 9 亿美元，投后超 63 亿美元；IDG 领投、腾讯/阿里战投 [13]</td></tr>
+    <tr><td><b>逐际动力</b></td><td>保密递表港交所</td><td>上半年约 4 亿美元；Pre-IPO 投后 150 亿元 [13]</td></tr>
+    <tr><td><b>1X</b></td><td>软银洽购</td><td>估值 60 亿美元 [13]</td></tr>
+   </table>
+  </div>
+ </div>
+ <div class="col" style="flex:.95">
+  <div class="blockbox"><div class="h">其他大额融资 <span>· 两头集中</span></div>
+   <div class="grid2">
+    <div class="card"><h3>银河通用</h3><p>25 亿元（2026-03），国家人工智能产业基金首次出手具身智能 [12]</p></div>
+    <div class="card"><h3>千寻智能</h3><p>单笔超 20 亿元；云锋、红杉中国、TCL、阿里系 [10]</p></div>
+    <div class="card"><h3>智平方</h3><p>超 10 亿元 B 轮；一年 12 轮；与吉利、奔驰合作 [10]</p></div>
+    <div class="card"><h3>星海图</h3><p>近 10 亿元 B 轮 [10]</p></div>
+   </div>
+  </div>
+  <div class="card red" style="margin-bottom:2.4mm"><h3>重定价样本：宇树上市 11 天股价腰斩</h3><p>市场从“融资叙事”切换为“交付与盈利”定价 [13]。这不是个股事件，而是整个赛道的定价锚切换。</p></div>
+  <div class="so-what"><b>判断</b>：未来 12 个月，一级市场的高估值与二级市场的交付检验会持续拉扯。对研究/招聘的含义是——<b>优先看已上市/已递表/有真实收入的主体</b>，成长期股权激励需按出清概率折价。</div>
+ </div>
+</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">估值 vs 交付 <span>· 口径不同，不可直接比倍数</span></div>
+<table>
+<tr><th style="width:16%">公司</th><th style="width:24%">估值 / 市值</th><th style="width:26%">收入</th><th>判断</th></tr>
+<tr><td><b>宇树</b></td><td>发行市值 609 亿元 [8]</td><td>2026 前三季 18.17 亿元、净利 3.87 亿 [9]</td><td>二级已按“交付与盈利”定价，11 天腰斩 [13]</td></tr>
+<tr><td><b>智元</b></td><td>400–500 亿港元 [13]</td><td>2026H1 近 20 亿元 [9]</td><td>看港股定价能否接住一级估值</td></tr>
+<tr><td><b>优必选</b></td><td>约 450 亿港元 [13]</td><td>—</td><td>已上市；订单为厂商口径，待独立核验</td></tr>
+<tr><td><b>小鹏 IRON</b></td><td>投后超 63 亿美元 [13]</td><td>—</td><td>单轮私募纪录，等待量产验证</td></tr>
+<tr><td><b>逐际动力</b></td><td>Pre-IPO 投后 150 亿元 [13]</td><td>—</td><td>保密递表，收入与毛利未公开</td></tr>
+</table></div>
+<div class="so-what" style="margin-top:2mm"><b>未来 12 个月观察点</b>：① 智元港股定价；② 宇树解禁后走势；③ 二梯队（星海图/逐际）能否拿到下一轮；④ 上游零件公司订单是否随整机放量。</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>10 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 11 风险 -->
+<div class="page"><div class="topbar"><div class="kicker">10 · 风险与洗牌</div><div class="topright">三年出清 15%+</div></div>
+<h2>洗牌按现金流排序，不按技术先进性排序</h2>
+<div class="lead">高工判断未来三年 15%+ 公司被淘汰 [2]；对照 320 余家企业 [10]，意味着<b>超过 48 家退出</b> <span class="tag y">推断</span>。活下去的顺序，取决于“交付—复购—降本”闭环的速度。</div>
+<div class="grid2">
+ <div class="card red"><h3><span class="tag r">R1</span> 淘汰率已被量化</h3><p>未来三年 15%+ 出清 [2]；320 余家企业 [10] → 超过 48 家退出。二、三梯队对后续轮次依赖度最高 [10]。</p></div>
+ <div class="card red"><h3><span class="tag r">R2</span> 盈利被主动牺牲</h3><p>未来 6–12 个月产品迭代快、发布频繁、定价激进：支撑出货、压制盈利 [3]。均价 -20.6% [5]、2035 累计 -56% [3] 是价格战的量化背景。</p></div>
+ <div class="card red"><h3><span class="tag r">R3</span> 需求证伪</h3><p>科研/展示/政府 69% [5]、行业应用 9.01% [9]、50%–70% 产量流向数据工厂 [13]。若数据工厂预算收缩，出货量将断崖。</p></div>
+ <div class="card red"><h3><span class="tag r">R4</span> 技术路线</h3><p>信通院明确路线未收敛 [17]。选错架构的团队，其数据与模型资产可能不可迁移。</p></div>
+ <div class="card red"><h3><span class="tag r">R5</span> 融资断档</h3><p>月度融资从 6 月 309 亿元降至 10 月 101 亿元 [9]；第二梯队累计订单仅数亿元 [10]，对下一轮依赖度最高。</p></div>
+ <div class="card red"><h3><span class="tag r">R6</span> 出海合规</h3><p>认证、安全、数据合规、本地化服务四道门槛 [2]；中小厂商难以独立承担。</p></div>
+ <div class="card red"><h3><span class="tag r">R7</span> 供应链</h3><p>丝杠全球仅舍弗勒、新剑传动供 Optimus，日欧曾占中国市场 90% [14]。国产化未完成前，产能与成本受制于人。</p></div>
+ <div class="card gray"><h3>两个正向缓冲</h3><p>① 政策：智能机器人升级为新兴支柱产业，科创板第五套标准接纳未盈利硬科技 [7][13]；② 上游先起量：长盈精密 H1 零组件交付 86 万件 [7]。<b>缓冲不等于反转。</b></p></div>
+</div>
+<div class="so-what" style="margin-top:2.4mm"><b>洗牌逻辑</b>：率先在 3C/半导体/CNC 等确定性工位跑通“交付—复购—降本”的厂商存活；依赖数据工厂与科研采购的厂商，在预算周期转向时最先出清。判断指标不是参数，而是<b>复购率、实际工作时长、单台毛利</b>。</div>
+
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">风险时间表 <span>· 未来 12–24 个月</span></div>
+<table>
+<tr><th style="width:16%">时间</th><th style="width:40%">事件</th><th>监控指标</th></tr>
+<tr><td><b>Q4 2026</b></td><td>融资转冷、估值重定价</td><td>月度融资额与交易数 [9]；IPO 定价</td></tr>
+<tr><td><b>2027 H1</b></td><td>上市窗口集中、二梯队融资断档</td><td>递表/过会数量；B/C 轮完成率</td></tr>
+<tr><td><b>2027 H2–2028</b></td><td>出清 15%+（48 家以上）[2][10]</td><td>企业注销/并购数量；复购率</td></tr>
+</table></div>
+<div class="cols" style="margin-top:2.2mm">
+ <div class="col"><div class="card red"><h3>最该盯的三个数</h3><p>① 行业应用收入占比（宇树 9.01%，剔除导览后约 2.6% [9][34]）；② 复购率（当前无公开数据）；③ 单台实际工作时长（当前无公开数据）。</p></div></div>
+ <div class="col"><div class="card red"><h3>最容易被忽略的风险</h3><p>数据工厂预算收缩 [13]；丝杠/减速器供应受制于人 [14]；出海四类合规门槛 [2]。</p></div></div>
+ <div class="col"><div class="card gray"><h3>反向指标</h3><p>若 2027 年行业应用收入占比升破 20%、复购率出现公开数据，则洗牌可能缓于预期。</p></div></div>
+</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>11 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 12 机会与人才 -->
+<div class="page"><div class="topbar"><div class="kicker">11 · 机会与人才</div><div class="topright">确定性 · 薪资 · 人才</div></div>
+<h2>上游确定性最高 · 模型层薪资最贵 · 人才最缺跨界复合</h2>
+<div class="lead">本报告的取舍：整机为主、上游为卫星。三个“最”对应三种策略——上游确定性最高、模型层薪资最贵、人才最缺跨界复合。</div>
+<div class="grid3" style="margin-top:2mm;margin-bottom:2.6mm">
+ <div class="card blue"><h3>上游 · 确定性最高 <span class="tag g">6.8%</span></h3><div class="small">126 个岗位；无论哪家整机赢，都要买丝杠/灵巧手/六维力。</div></div>
+ <div class="card gold"><h3>模型层 · 薪资最贵 <span class="tag r">6.2%</span></h3><div class="small">VLA/世界模型；岗位少、溢价高、路线未收敛。</div></div>
+ <div class="card blue"><h3>人才 · 最缺跨界复合 <span class="tag g">39.5%</span></h3><div class="small">算法+量产+供应链的复合背景最稀缺；整机仍是招聘基本盘（728 个岗位）。</div></div>
+</div>
+<div class="cols">
+ <div class="col" style="flex:1.05">
+  <div class="blockbox"><div class="h">四个赛道机会 <span>· 整机优先</span></div>
+   <div class="card blue" style="margin-bottom:2mm"><h3>① 整机集成商 <span class="tag g">主攻</span></h3><p>智元、自变量、银河通用、它石、千寻等；看行业应用收入占比、复购率、单台毛利。有订单、有量产、有复购的整机厂优先。</p></div>
+   <div class="card blue" style="margin-bottom:2mm"><h3>② 量产制造与质量体系</h3><p>长盈精密 H1 交付 86 万件 [7]、优必选柳州万台级工厂投产 [13]——整机放量的刚性需求，工艺工程、良率、SQE、自动化设备。</p></div>
+   <div class="card blue" style="margin-bottom:2mm"><h3>③ 上游高壁垒零件 <span class="tag y">卫星</span></h3><p>丝杠、灵巧手、六维力。产业瓶颈在这里，但零部件岗位只占 6.8%；只做卡位监测，不作为主攻方向。</p></div>
+   <div class="card blue"><h3>④ 模型层 / 数据与出海</h3><p>模型层（VLA/世界模型）薪资最贵但岗位仅 6.2%；数据/仿真与出海合规是点状机会，跟着有订单的公司走 [3][17][18]。</p></div>
+  </div>
+ </div>
+ <div class="col" style="flex:.95">
+  <div class="blockbox"><div class="h">对招聘/人才判断的启示 <span>· 整机视角</span></div>
+   <div class="card green" style="margin-bottom:1.8mm"><h3>最紧缺：整机厂的复合能力</h3><p>算法 + 量产 + 供应链的复合背景；单点专精溢价下降，能同时看懂模型、本体与交付的人更稀缺。</p></div>
+   <div class="card green" style="margin-bottom:1.8mm"><h3>薪资最贵但高波动：VLA/世界模型</h3><p>路线未收敛 [17]，人才价值与所选架构强绑定；跳槽需评估团队路线与数据资产。</p></div>
+   <div class="card green" style="margin-bottom:1.8mm"><h3>需求刚性上升：量产与供应链</h3><p>万台级工厂 [13]、86 万件交付 [7] 指向工艺工程、良率、SQE、自动化设备岗位。</p></div>
+   <div class="card green"><h3>新设编制：出海合规/认证</h3><p>出海翻倍预期 [2] 与四类合规门槛直接对应，属于从 0 到 1 的岗位。</p></div>
+  </div>
+  <div class="card red"><h3>给候选人的风险提示</h3><p>320 余家企业 [10] 背景下，优先选择“已上市/已递表/有真实订单”的整机厂；上游卡位作为加分项；成长期股权激励按 15%+ 出清概率折价。</p></div>
+ </div>
+</div>
+<div class="blockbox" style="margin-top:2.4mm"><div class="h">人才地图 <span>· 整机优先（分析师推断）</span></div>
+<table>
+<tr><th style="width:16%">环节</th><th style="width:30%">典型岗位</th><th style="width:14%">稀缺度</th><th>来源池</th></tr>
+<tr><td><b>整机 · 算法</b></td><td>VLA、世界模型（<b>薪资最贵</b>）、运控、SLAM</td><td><span class="tag r">高</span></td><td>大模型/自动驾驶/高校实验室</td></tr>
+<tr><td><b>整机 · 量产</b></td><td>工艺工程、良率、SQE、自动化设备</td><td><span class="tag g">刚性上升</span></td><td>汽车/3C/工业机器人</td></tr>
+<tr><td><b>整机 · 产品/交付</b></td><td>机器人产品经理、FDE、解决方案</td><td><span class="tag y">中</span></td><td>工业自动化/机器人/汽车</td></tr>
+<tr><td><b>上游零件（卫星）</b></td><td>丝杠/谐波工艺、灵巧手微型传动、六维力</td><td><span class="tag y">高但岗位少</span></td><td>舍弗勒/哈默纳科/消费电子/医疗器械</td></tr>
+<tr><td><b>出海</b></td><td>合规、认证、本地化服务</td><td><span class="tag">新设</span></td><td>认证机构/车企海外/律所</td></tr>
+</table></div>
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>12 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 12B 社招需求 -->
+<div class="page"><div class="topbar"><div class="kicker">12 · 社招需求</div><div class="topright">1,843 岗位 / 127 家公司</div></div>
+<h2>1,843 个具身社招岗位：硬件招得最多，VLA 只占 6%</h2>
+<div class="lead">数据源：公开社招官网聚合（来源已隐藏），切片＝领域「具身/机器人」+ 类型「社招」，抓取日 2026-11-07。行业叙事在讲 VLA，实际放出来的岗位里结构/硬件才是最大头。</div>
+<div class="cols">
+ <div class="col" style="flex:1">
+  <div class="blockbox"><div class="h">职能分布 <span>· n=1,843</span></div>
+   <div class="bar"><div class="lbl">硬件研发</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">497</div></div>
+   <div class="bar"><div class="lbl">算法</div><div class="trk"><div class="fil" style="width:94%"></div></div><div class="v">466</div></div>
+   <div class="bar"><div class="lbl">工程开发</div><div class="trk"><div class="fil" style="width:80%"></div></div><div class="v">399</div></div>
+   <div class="bar"><div class="lbl">产品 / 设计</div><div class="trk"><div class="fil y" style="width:23%"></div></div><div class="v">112</div></div>
+   <div class="bar"><div class="lbl">运营 / 市场 / 商业化</div><div class="trk"><div class="fil y" style="width:19%"></div></div><div class="v">95</div></div>
+   <div class="bar"><div class="lbl">研究</div><div class="trk"><div class="fil y" style="width:19%"></div></div><div class="v">93</div></div>
+   <div class="bar"><div class="lbl">交付 / 解决方案</div><div class="trk"><div class="fil l" style="width:10%"></div></div><div class="v">50</div></div>
+   <div class="bar"><div class="lbl">职能 / 支持</div><div class="trk"><div class="fil l" style="width:7%"></div></div><div class="v">32</div></div>
+  </div>
+  <div class="blockbox"><div class="h">标题关键词 <span>· 真实需求方向</span></div>
+   <div class="bar"><div class="lbl">结构 / 硬件</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">28.1%</div></div>
+   <div class="bar"><div class="lbl">仿真 / 数据</div><div class="trk"><div class="fil" style="width:44%"></div></div><div class="v">12.4%</div></div>
+   <div class="bar"><div class="lbl">运控 / RL / SLAM</div><div class="trk"><div class="fil" style="width:37%"></div></div><div class="v">10.3%</div></div>
+   <div class="bar"><div class="lbl">灵巧手 / 关节</div><div class="trk"><div class="fil y" style="width:27%"></div></div><div class="v">7.5%</div></div>
+   <div class="bar"><div class="lbl">VLA / 世界模型</div><div class="trk"><div class="fil r" style="width:22%"></div></div><div class="v">6.2%</div></div>
+   <div class="bar"><div class="lbl">销售 / 海外 / BD</div><div class="trk"><div class="fil l" style="width:16%"></div></div><div class="v">4.4%</div></div>
+   <div class="bar"><div class="lbl">IR / 财务 / 职能</div><div class="trk"><div class="fil l" style="width:3%"></div></div><div class="v">0.8%</div></div>
+  </div>
+ </div>
+ <div class="col" style="flex:1">
+  <div class="blockbox"><div class="h">城市分布 <span>· 四城占单城市岗位 77.3%</span></div>
+   <div class="bar"><div class="lbl">上海</div><div class="trk"><div class="fil" style="width:100%"></div></div><div class="v">435</div></div>
+   <div class="bar"><div class="lbl">深圳</div><div class="trk"><div class="fil" style="width:97%"></div></div><div class="v">420</div></div>
+   <div class="bar"><div class="lbl">北京</div><div class="trk"><div class="fil" style="width:81%"></div></div><div class="v">353</div></div>
+   <div class="bar"><div class="lbl">苏州</div><div class="trk"><div class="fil" style="width:50%"></div></div><div class="v">216</div></div>
+   <div class="bar"><div class="lbl">杭州</div><div class="trk"><div class="fil l" style="width:16%"></div></div><div class="v">70</div></div>
+   <div class="small" style="margin-top:1mm">上海/苏州偏硬件与制造，北京偏算法与研究，深圳软硬一体。</div>
+  </div>
+  <div class="blockbox"><div class="h">集中度与头部 <span>· Top10 占 49.6%</span></div>
+   <div class="cols">
+    <div class="col">
+     <div class="bar"><div class="lbl">Top5</div><div class="trk"><div class="fil" style="width:35%"></div></div><div class="v">35.3%</div></div>
+     <div class="bar"><div class="lbl">Top10</div><div class="trk"><div class="fil" style="width:50%"></div></div><div class="v">49.6%</div></div>
+     <div class="bar"><div class="lbl">Top20</div><div class="trk"><div class="fil" style="width:67%"></div></div><div class="v">67.0%</div></div>
+     <div class="bar"><div class="lbl">Top30</div><div class="trk"><div class="fil" style="width:77%"></div></div><div class="v">76.8%</div></div>
+    </div>
+    <div class="col">
+     <div class="small"><b>招聘量前五</b><br>追觅 193（清洁/家用）<br>智元 190（人形整机）<br>自变量 139<br>银河通用 68<br>帕西尼 61（触觉）</div>
+    </div>
+   </div>
+  </div>
+  <div class="so-what"><b>与行业报告交叉验证</b>：上游是产业瓶颈，但零部件公司只有 126 个岗位（6.8%）——招聘还没跟上；数据/仿真公司 142 个岗位、产品+商业化占 29.6%，是少数在扩张的商业化方向；出海与 IR 仍是点状。</div>
+ </div>
+</div>
+<div class="hl" style="margin-top:1.8mm"><b>数据口径提醒</b>：70.2% 的岗位发布已超过 90 天，近 7 天仅 42 个（2.3%）——「在招」是累积池，不等于当月新增需求；无薪资/年限字段；本版未补，需另找数据源。</div>
+<div class="grid3" style="margin-top:2.2mm">
+ <div class="card blue"><h3>P0 · 硬件与运控 <span class="tag g">岗位量最大</span></h3><p>结构/硬件 28.1%、运控/RL/SLAM 10.3%。供给分散、成单率高，候选人来自汽车零部件、3C 结构、工业机器人、自动驾驶。</p></div>
+ <div class="card blue"><h3>P1 · 数据与灵巧手 <span class="tag y">稀缺溢价</span></h3><p>仿真/数据 12.4%、灵巧手/关节 7.5%。数据工厂扩张、上游卡位，候选人稀缺，适合定向挖角。</p></div>
+ <div class="card blue"><h3>P2 · 商业化与资本 <span class="tag">点状机会</span></h3><p>海外销售 4.4%、IR/财务 0.8%。出海与 IPO 已启动但未成规模，跟着客户节奏做单点突破。</p></div>
+</div>
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>13 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+<!-- 14 来源 -->
+<div class="page"><div class="topbar"><div class="kicker">13 · 来源与说明</div><div class="topright">19 条公开来源 + 社招数据</div></div>
+<h2>来源引用与使用限制</h2>
+<div class="cols" style="margin-top:1mm">
+ <div class="col"><div class="src">
+  <p><b>[1]</b> TrendForce 集邦咨询（2026-08-19）<br>trendforce.cn/presscenter/news/20260819-13190.html</p>
+  <p><b>[2]</b> 第一财经·高工年会（2026-11-03）<br>yicai.com/news/103423873.html</p>
+  <p><b>[3]</b> 新浪财经·摩根大通（2026-10-01）<br>finance.sina.com.cn/jjxw/2026-10-01/doc-inittekc5239550.shtml</p>
+  <p><b>[4]</b> 华尔街见闻·高盛（2026-09-01）<br>wallstreetcn.com/articles/3780779</p>
+  <p><b>[5]</b> IDC（2026-09-29）<br>ithome.com/1/008/202.htm</p>
+  <p><b>[6]</b> 中商情报网（2026-06-25）<br>askci.com/news/chanye/20260625/091252278234997220567477.shtml</p>
+  <p><b>[7]</b> 证券日报·弗若斯特沙利文（2026-10-18）<br>zqrb.cn/finance/hangyedongtai/2026-10-18/A1792171343543.html</p>
+  <p><b>[8]</b> 21 经济网（2026-08-19）<br>21jingji.com/article/20260819/herald/ec62e4f89a4503c2e92181d225b43f88.html</p>
+  <p><b>[9]</b> 21 经济网（2026-10-31）<br>21jingji.com/article/20261031/63e5bf9de4ae3b24319536f794097456.html</p>
+  <p><b>[10]</b> 虎嗅（2026-03-03）<br>huxiu.com/article/4838673.html</p>
+ </div></div>
+ <div class="col"><div class="src">
+  <p><b>[11]</b> 具身集《中国具身智能整机企业融资报告 2026》<br>jushenji.com/reports/china-funding</p>
+  <p><b>[12]</b> 界面新闻（2026）<br>jiemian.com/article/14531147.html</p>
+  <p><b>[13]</b> AIMAN.World 融资盘点（2026-09-05）<br>aiman.world/blog/2026年人形机器人行业融资盘点-1788573934</p>
+  <p><b>[14]</b> 智教新媒·产业链解读（2026-03-20）<br>iedumedia.com/news/newsinfo/1714</p>
+  <p><b>[15]</b> ZHONGDE PRECISION 产业链解析（2026-08-04）<br>zdpmt.com/zh/resources/china-humanoid-robot-core-components-supply-chain/</p>
+  <p><b>[16]</b> 东方财富研报·人形机器人行业专题<br>pdf.dfcfw.com/pdf/H3_AP202502211643350790_1.pdf</p>
+  <p><b>[17]</b> 中国信通院《Embodied AI Development Report (2026)》<br>caict.ac.cn/english/research/whitepapers/202610/</p>
+  <p><b>[18]</b> WorldSense（2026-09-06）<br>worldsensetech.com/zh/articles/2026-09-06-embodied-ai-landscape/</p>
+  <p><b>[19]</b> IT 之家（2026-10-10）<br>ithome.com/1/011/272.htm</p>
+ </div></div>
+</div>
+<div class="hl" style="margin-top:3mm"><b>使用限制</b>：本报告全部事实性陈述来自 [1]–[19]；标注“分析师推断”者为推理结论，不得作为事实引用；标注“厂商宣称”者未独立核验；关键数据采用区间与替代指标，不取单点。多机构数字并列时，未做加权平均，也未取单点。</div>
+<div class="small" style="margin-top:2mm">社招数据：公开社招官网聚合（具身/机器人 + 社招，1,843 岗位，127 家公司；来源已隐藏）<br>数据截止：2026-11-07　·　仅供研究参考，不构成投资建议</div>
+
+<div class="blockbox" style="margin-top:3mm"><div class="h">方法与免责声明</div><div class="small">公开来源交叉核对；多机构数字并列，不取单点、不做加权平均；厂商宣称口径单独标注。本报告仅供研究参考，不构成投资建议。</div></div>
+
+<div class="small" style="margin-top:2mm"><b>数据说明</b>：核心数据已交叉核对；市场规模、复购率、MTBF 等关键项采用区间与替代指标，不取单点；多机构数字并列时不作加权平均。</div>
+
+<div class="foot"><div>人形机器人 / 具身智能 · 制作人：猎头 Tony Qiu · 行业研究</div><div>14 / 14</div><div>Tony QIU | Executive Search</div></div></div>
+
+
+<style>@media print{.dl{display:none}} .dl{position:fixed;right:22px;bottom:22px;z-index:99;background:#0F2B46;color:#fff;text-decoration:none;font:600 14px/1 -apple-system,"PingFang SC",sans-serif;padding:12px 18px;border-radius:999px;box-shadow:0 6px 20px rgba(15,43,70,.25)} .dl:hover{background:#1F4E78}</style>
+<a class="dl" href="report.pdf" download>下载 PDF</a>
+
+</body></html>
